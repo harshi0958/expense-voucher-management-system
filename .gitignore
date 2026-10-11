@@ -1,0 +1,24 @@
+# Dependencies
+**/node_modules/
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Generated frontend output
+frontend/dist/
+frontend/coverage/
+
+# Local uploads and database backups
+backend/uploads/
+*.dump
+*.backup
+*.sql.backup
+
+# Logs and operating-system files
+npm-debug.log*
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  html[data-theme='dark'] {
+    color-scheme: dark;
+  }
+
+  html[data-theme='dark'] body {
+    background: #0f172a;
+    color: #e2e8f0;
+  }
+
+  html[data-theme='dark'] .bg-gray-50,
+  html[data-theme='dark'] .bg-slate-50 { background-color: #0f172a !important; }
+  html[data-theme='dark'] .bg-white,
+  html[data-theme='dark'] .auth-card { background-color: #172033 !important; }
+  html[data-theme='dark'] .bg-gray-100 { background-color: #253147 !important; }
+  html[data-theme='dark'] .bg-gray-200 { background-color: #334155 !important; }
+  html[data-theme='dark'] .bg-blue-50 { background-color: #172c49 !important; }
+  html[data-theme='dark'] .bg-green-50 { background-color: #123326 !important; }
+  html[data-theme='dark'] .bg-yellow-50 { background-color: #3b2e14 !important; }
+  html[data-theme='dark'] .bg-red-50 { background-color: #3b2026 !important; }
+  html[data-theme='dark'] .bg-purple-50 { background-color: #2b2144 !important; }
+  html[data-theme='dark'] .bg-teal-50 { background-color: #123435 !important; }
+  html[data-theme='dark'] .text-gray-900,
+  html[data-theme='dark'] .text-gray-950,
+  html[data-theme='dark'] .text-slate-900,
+  html[data-theme='dark'] .text-slate-950 { color: #f1f5f9 !important; }
+  html[data-theme='dark'] .text-gray-800,
+  html[data-theme='dark'] .text-gray-700,
+  html[data-theme='dark'] .text-gray-600,
+  html[data-theme='dark'] .text-gray-500,
+  html[data-theme='dark'] .text-slate-700,
+  html[data-theme='dark'] .text-slate-600 { color: #cbd5e1 !important; }
+  html[data-theme='dark'] .text-blue-700,
+  html[data-theme='dark'] .text-blue-800 { color: #93c5fd !important; }
+  html[data-theme='dark'] .text-green-700,
+  html[data-theme='dark'] .text-green-800 { color: #86efac !important; }
+  html[data-theme='dark'] .text-yellow-700,
+  html[data-theme='dark'] .text-yellow-800 { color: #fde68a !important; }
+  html[data-theme='dark'] .text-red-700,
+  html[data-theme='dark'] .text-red-800 { color: #fda4af !important; }
+  html[data-theme='dark'] .border-gray-100,
+  html[data-theme='dark'] .border-gray-200,
+  html[data-theme='dark'] .border-slate-100,
+  html[data-theme='dark'] .border-slate-200 { border-color: #334155 !important; }
+  html[data-theme='dark'] .hover\:bg-gray-50:hover,
+  html[data-theme='dark'] .hover\:bg-gray-100:hover { background-color: #253147 !important; }
+  html[data-theme='dark'] .landing-page { background-color: #0f172a; }
+  html[data-theme='dark'] .landing-page section.border-y { background-color: #111c31; border-color: #334155; }
+  html[data-theme='dark'] .theme-toggle { background-color: #172033; color: #e2e8f0; border-color: #334155; }
+  html[data-theme='dark'] .input-field { background-color: #0f172a; border-color: #475569; color: #f1f5f9; }
+  html[data-theme='dark'] .card { background-color: #172033; border-color: #334155; }
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors font-medium;
+  }
+  .btn-danger {
+    @apply bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium;
+  }
+  .btn-success {
+    @apply bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium;
+  }
+  .input-field {
+    @apply w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+  .label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  .error-text {
+    @apply text-red-500 text-sm mt-1;
+  }
+}
